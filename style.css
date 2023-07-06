@@ -1,7 +1,7 @@
 /* style.css */
 
 header {
-	background-color: #333;
+	background-color: #FFAE00;
 	color: #fff;
 	padding: 20px;
 	position: fixed;
@@ -46,10 +46,9 @@ nav a:hover {
 .icon {
 	position: absolute;
 	top: 50%;
-	right: 20px;
-	transform: translateY(-50%);
+	right: 0px;
+	transform: translateY(-40%);
 	display: flex;
-	align-items: center;
 }
 
 .icon a {
@@ -60,8 +59,8 @@ nav a:hover {
 
 .icon img {
 	display: block;
-	width: 70%;
-	height: 70%;
+	width: 60%;
+	height: 60%;
 }
 
 .content {
@@ -77,11 +76,17 @@ nav a:hover {
 	color: #333; /* 修改标题颜色 */
 }
 
+.content h2 {
+	font-size: 50px; /* 调整标题文本字体大小 */
+	margin-bottom: 30px;
+	color: #333; /* 修改标题颜色 */
+}
+
 .content p {
 	font-size: 24px;
 	margin-bottom: 10px;
 	position: relative; /* 添加相对定位 */
-	padding-left: 20px; /* 添加左侧内边距 */
+  margin-left: 40px; /* 添加左侧外边距 */
 	color: #666; /* 修改文本颜色 */
 }
 
@@ -90,11 +95,10 @@ nav a:hover {
 	display: inline-block;
 	width: 10px;
 	height: 10px;
-	position: absolute;
+	position: relative; /* 改为相对定位 */
 	top: 50%;
-	left: 0;
 	transform: translateY(-50%);
-	margin-right: 10px;
+	margin-right: 20px; /* 将左侧外边距改为右侧外边距 */
 	border-radius: 50%;
 	background-color: #FFAE00; /* 调整圆球颜色 */
 }
