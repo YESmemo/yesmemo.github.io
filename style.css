@@ -59,8 +59,8 @@ nav a:hover {
 
 .icon img {
 	display: block;
-	width: 55%;
-	height: 55%;
+	width: 40%;
+	height: 40%;
 }
 
 .content {
@@ -77,13 +77,13 @@ nav a:hover {
 }
 
 .content h2 {
-	font-size: 50px; /* 调整标题文本字体大小 */
+	font-size: 30px; /* 调整标题文本字体大小 */
 	margin-bottom: 30px;
 	color: #333; /* 修改标题颜色 */
 }
 
 .content p {
-	font-size: 24px;
+	font-size: 10px;
 	margin-bottom: 10px;
 	position: relative; /* 添加相对定位 */
   margin-left: 40px; /* 添加左侧外边距 */
