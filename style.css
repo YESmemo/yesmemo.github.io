@@ -5,7 +5,7 @@ body {
 }
 
 header {
-	background-image: url("https://webstatic.mihoyo.com/upload/op-public/2023/06/20/9534a7aa8167485dae9eab93d45a4ab4_8350624237683015692.jpg");
+	background-image: url("https://pixabay.com/zh/photos/lightbulb-concept-cork-bulletin-2692247/");
 	background-size: cover; /* 调整图片大小以填充整个标题栏 */
 	background-position: center; /* 调整图片位置为中心 */
 	color: #fff;
@@ -18,7 +18,6 @@ h1 {
 }
 
 nav {
-	background-color: #555;
 	color: #fff;
 	padding: 10px;
 	text-align: center;
