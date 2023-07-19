@@ -7,14 +7,12 @@ body {
 header {
 	background-color: #333;
 	color: #fff;
-	padding-top: 20px
-	padding-bottom: 20px
-	text-align: center;
+	padding: 20px;
 }
 
 h1 {
 	margin: 0;
-	font-size: 20px;
+	font-size: 30px;
 }
 
 nav {
