@@ -53,3 +53,15 @@ footer p {
 	margin: 0;
 	font-size: 14px;
 }
+
+.profile {
+  display: flex; /* 将父容器变为Flex布局 */
+  align-items: center; /* 垂直居中对齐 */
+}
+
+.profile img {
+  width: 50px; /* 设置头像图片的宽度 */
+  height: 50px; /* 设置头像图片的高度 */
+  border-radius: 50%; /* 设置圆形边框 */
+  margin-right: 10px; /* 设置头像图片和文本之间的右侧间距 */
+}
