@@ -11,7 +11,7 @@ header {
 }
 
 h1 {
-	margin: 0;
+	margin: 10px;
 	font-size: 30px;
 }
 
@@ -63,4 +63,18 @@ footer p {
   height: 50px; /* 设置头像图片的高度 */
   border-radius: 50%; /* 设置圆形边框 */
   margin-right: 10px; /* 设置头像图片和文本之间的右侧间距 */
+}
+
+article {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+article h2 {
+  margin-top: 0;
+}
+
+article p:last-child {
+  margin-bottom: 0;
 }
