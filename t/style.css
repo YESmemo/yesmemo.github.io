@@ -82,3 +82,8 @@ article p:last-child {
   text-decoration: none;
   color: #FFAE00;
 }
+
+iframe {
+  width: 100%;
+  border: none;
+}
