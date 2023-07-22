@@ -22,7 +22,7 @@ nav {
 .logo a {
   font-size: 24px;
   font-weight: bold;
-  color: #333;
+  color: #fff;
   text-decoration: none;
 }
 .menu ul {
@@ -36,7 +36,7 @@ nav {
 }
 .menu a {
   font-size: 16px;
-  color: #333;
+  color: #fff;
   text-decoration: none;
 }
 /* 在平板设备上，竖屏和横屏都显示四个菜单按钮 */
@@ -73,13 +73,11 @@ nav {
   font-size: 48px;
   font-weight: bold;
   color: #fff;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
 }
 .hero p {
   font-size: 24px;
   color: #fff;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   margin-bottom: 40px;
 }
 .cta {
@@ -92,7 +90,6 @@ nav {
   border-radius: 30px;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 .cta:hover {
   transform: scale(1.1);
