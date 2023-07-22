@@ -3,7 +3,108 @@
 <head>
   <title>备忘录官网</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    /* 公共样式 */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      position: relative;
+      height: 70px;
+      background-color: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      z-index: 1;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      padding: 0 20px;
+    }
+    .logo a {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      text-decoration: none;
+    }
+    .menu ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .menu li {
+      margin: 0 10px;
+    }
+    .menu a {
+      font-size: 16px;
+      color: #333;
+      text-decoration: none;
+    }
+    /* 在平板设备上，竖屏和横屏都显示四个菜单按钮 */
+    @media screen and (min-width: 768px) {
+      .menu {
+        display: flex;
+      }
+      .menu li {
+        margin: 0 20px;
+      }
+    }
+    /* 在台式机和笔记本电脑上，始终显示四个菜单按钮 */
+    @media screen and (min-width: 1024px) {
+      .menu {
+        display: flex;
+      }
+      .menu li {
+        margin: 0 20px;
+      }
+    }
+    /* 首页样式 */
+    .hero {
+      height: calc(100vh - 70px);
+      background-image: url("https://source.unsplash.com/1600x900/?notebook");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 48px;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 24px;
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      margin-bottom: 40px;
+    }
+    .cta {
+      display: inline-block;
+      background-color: #fff;
+      color: #333;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 10px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    .cta:hover {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -14,51 +115,16 @@
       <div class="menu">
         <ul>
           <li><a href="#">首页</a></li>
-          <li><a href="#">功能介绍</a></li>
           <li><a href="#">下载</a></li>
-          <li><a href="#">关于我们</a></li>
-        </ul>
-      </div>
-      <div class="more">
-        <div class="burger">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <ul class="more-menu">
-          <li><a href="#">首页</a></li>
-          <li><a href="#">功能介绍</a></li>
-          <li><a href="#">下载</a></li>
-          <li><a href="#">关于我们</a></li>
+          <li><a href="#">关于</a></li>
         </ul>
       </div>
     </nav>
     <div class="hero">
-      <h1>快速记录您的灵感和任务</h1>
+      <h1>随时随地记录您的灵感和任务</h1>
       <p>备忘录是一款简单易用的记录工具，让您随时随地记录您的灵感和任务，让生活更轻松。</p>
       <a href="#" class="cta">免费试用</a>
     </div>
   </header>
-  <main>
-    <section class="features">
-      <h2>主要功能</h2>
-      <div class="feature-item">
-        <img src="images/feature-1.jpg" alt="功能 1">
-        <h3>记录灵感和任务</h3>
-        <p>随时随地记录您的灵感和任务，不再错过任何重要的事情。</p>
-      </div>
-      <div class="feature-item">
-        <img src="images/feature-2.jpg" alt="功能 2">
-        <h3>同步到云端</h3>
-        <p>备忘录会自动将您的记录同步到云端，保障您的数据安全。</p>
-      </div>
-      <div class="feature-item">
-        <img src="images/feature-3.jpg" alt="功能 3">
-        <h3>分类和标签</h3>
-        <p>使用分类和标签，轻松管理您的记录，快速查找需要的信息。</p>
-      </div>
-    </section>
-  </main>
-  <script src="script.js"></script>
 </body>
 </html>
