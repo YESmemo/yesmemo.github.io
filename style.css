@@ -9,7 +9,7 @@ body {
 header {
   position: relative;
   height: 70px;
-  background-color: #FEF9E5;
+  background-color: #6C95D6;
   z-index: 1;
 }
 nav {
@@ -60,7 +60,7 @@ nav {
 /* 首页样式 */
 .hero {
   height: calc(100vh - 70px);
-  background-color: #FEF9E5;
+  background-color: #6C95D6;
   background-size: cover;
   background-position: center;
   display: flex;
