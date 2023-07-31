@@ -1,0 +1,91 @@
+/* 公共样式 */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+header {
+  position: relative;
+  height: 70px;
+  background-color: #6C95D6;
+  z-index: 1;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  margin: 0 10px;
+}
+.menu a {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* 使用流体布局来定义网站元素的大小 */
+.container {
+  width: 90%;
+  max-width: 1200px; /* 设置最大宽度以防止元素过大 */
+  margin: 0 auto; /* 居中对齐 */
+}
+
+/* 使用媒体查询来响应不同的设备和分辨率 */
+/* 在小屏幕设备上，将导航栏菜单按钮堆叠在一起 */
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .menu-icon:hover {
+    color: #ccc;
+  }
+  .menu-icon.active {
+    color: #ccc;
+  }
+  .menu-icon.active + .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: #6C95D6;
+    z-index: 1;
+  }
+  .menu-icon.active + .menu li {
+    margin: 20px 0;
+  }
+  .menu-icon.active + .menu a {
+    color: #fff;
+  }
+}
