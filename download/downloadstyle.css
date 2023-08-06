@@ -103,3 +103,25 @@ article h2 {
 article p:last-child {
   margin-bottom: 0;
 }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+#update-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#update-list li {
+  margin-bottom: 20px;
+}
+
+#update-list h2 {
+  margin-top: 0;
+}
